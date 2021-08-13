@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+
+</head>
+
+<body>
+    <div class="center">
+        <h2>Calculator</h2>
+    </div>
+    <script>
+        const calculator =document.querySelector(".center");
+const container = document.createElement("div");
+container.innerHTML=`<p><input type="number" id="number1"></p>
+<p><input type="number" id="number2"></p>
+  <button id="add" onclick="add()">+</button>
+   <button id="subtract" onclick="sub()">-</button>
+   <button id="multiply" onclick="multiply()">*</button>
+  <button id="divide" onclick="div()">/</button>
+  <button id="divide" onclick="mod()">%</button>
+  <button id="clear" onclick="clr()">Clr</button>
+ <p><h2>Result</h2><input type="number" id="result"> </input></p>`;
+calculator.append(container);
+
+
+
+
+
+function add(){
+ let input1 = document.querySelector("#number1").value;
+  let input2 = document.querySelector("#number2").value;
+  let sum = +input1 + +input2;
+  let final=document.querySelector("#result");
+  final.value=sum;
+  
+}
+
+function sub(){
+ let input1 = document.querySelector("#number1").value;
+  let input2 = document.querySelector("#number2").value;
+  let sub = +input1 - +input2;
+  let final=document.querySelector("#result");
+  final.value=sub;
+}
+
+function multiply(){
+ let input1 = document.querySelector("#number1").value;
+  let input2 = document.querySelector("#number2").value;
+  let multiply = +input1 * +input2;
+  let final=document.querySelector("#result");
+  final.value=multiply;
+}
+
+function div(){
+ let input1 = document.querySelector("#number1").value;
+  let input2 = document.querySelector("#number2").value;
+  let div = +input1 / +input2;
+  let final=document.querySelector("#result");
+  final.value=div;
+}
+
+function mod(){
+ let input1 = document.querySelector("#number1").value;
+  let input2 = document.querySelector("#number2").value;
+  let mod = +input1 % +input2;
+  let final=document.querySelector("#result");
+  final.value=mod;
+}
+function clr(){
+  document.querySelector("#number1").value="";
+  document.querySelector("#number2").value="";
+  document.querySelector("#result").value="";
+}
+
+
+
+
+    </script>
+</body>
+
+</html>

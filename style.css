@@ -1,0 +1,21 @@
+.center{
+    width:400px;
+    margin:0 auto;
+    padding:15px;
+    background-color:green;
+    
+  }
+  input{
+    font-size:2em;
+  }
+  button{
+    font-size:2em;
+  }
+  /* @media only screen and (min-width: 768px) {
+    
+    /* .center {
+      width: 100%;
+      background-color:skyblue;
+    }
+  } */ 
+  
