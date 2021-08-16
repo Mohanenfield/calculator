@@ -30,17 +30,12 @@ container.innerHTML=`<p><input type="number" id="number1"></p>
  <p><h2>Result</h2><input type="number" id="result"> </input></p>`;
 calculator.append(container);
 
-
-
-
-
 function add(){
  let input1 = document.querySelector("#number1").value;
   let input2 = document.querySelector("#number2").value;
   let sum = +input1 + +input2;
   let final=document.querySelector("#result");
-  final.value=sum;
-  
+  final.value=sum;  
 }
 
 function sub(){
@@ -79,9 +74,6 @@ function clr(){
   document.querySelector("#number2").value="";
   document.querySelector("#result").value="";
 }
-
-
-
 
     </script>
 </body>
